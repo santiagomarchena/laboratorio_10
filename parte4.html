@@ -11,13 +11,13 @@
         let edad = parseInt(prompt("Ingrese su edad: "));
         let esEstudiante = prompt("¿Es usted un estudiante? Si/No").toLowerCase();
 
-        if(edad>18 && esEstudiante == 'si'){
+        if(edad>18 && esEstudiante == 'si','sí' ){
           console.log('Usted es mayor de edad.'); 
           console.log('Por ser mayor de edad, NO tiene derecho a descuento.');       
         }else if(edad>18 && esEstudiante == 'no'){
           console.log('Usted es mayor de edad.');
           console.log('Por no ser un estudiante, NO tiene derecho a descuento.');        
-        }else if(edad<18 && esEstudiante == 'si'){
+        }else if(edad<18 && esEstudiante == 'si','sí'){
           console.log('Usted es menor de edad.'); 
           console.log('Por ser menor de edad y estar estudiando, SI tiene derecho a descuento.');     
        }else if(edad<18 && esEstudiante == 'no'){
