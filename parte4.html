@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 4</title>
+</head>
+<body>
+    <script>
+        let nombre = prompt("Ingrese su nombre: ");
+        let edad = parseInt(prompt("Ingrese su edad: "));
+        let esEstudiante = prompt("¿Es usted un estudiante? Si/No").toLowerCase();
+
+        if(edad>18 && esEstudiante == 'si'){
+          console.log('Usted es mayor de edad.'); 
+          console.log('Por ser mayor de edad, NO tiene derecho a descuento.');       
+        }else if(edad>18 && esEstudiante == 'no'){
+          console.log('Usted es mayor de edad.');
+          console.log('Por no ser un estudiante, NO tiene derecho a descuento.');        
+        }else if(edad<18 && esEstudiante == 'si'){
+          console.log('Usted es menor de edad.'); 
+          console.log('Por ser menor de edad y estar estudiando, SI tiene derecho a descuento.');     
+       }else if(edad<18 && esEstudiante == 'no'){
+          console.log('Usted es menor de edad.'); 
+          console.log('Por no ser un estudiante, NO tiene derecho a descuento.');
+        }
+    
+    </script>
+</body>
+</html>
